@@ -1,0 +1,6 @@
+﻿  KruglovTaskVS5.cpp
+d:\workspacecpp\kruglovtaskvs5\kruglovtaskvs5\kruglovtaskvs5.cpp(13): warning C4091: typedef : пропускается слева от "DataStruct", когда ни одна переменная не объявлена
+d:\workspacecpp\kruglovtaskvs5\kruglovtaskvs5\kruglovtaskvs5.cpp(22): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+d:\workspacecpp\kruglovtaskvs5\kruglovtaskvs5\kruglovtaskvs5.cpp(40): warning C4018: <: несоответствие типов со знаком и без знака
+  KruglovTaskVS5.vcxproj -> D:\workspaceCpp\KruglovTaskVS5\Debug\KruglovTaskVS5.exe
+  KruglovTaskVS5.vcxproj -> D:\workspaceCpp\KruglovTaskVS5\Debug\KruglovTaskVS5.pdb (Partial PDB)
