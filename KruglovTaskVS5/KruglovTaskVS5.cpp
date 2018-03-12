@@ -10,6 +10,11 @@ typedef struct DataStruct
 	int key1;
 	int key2;
 	string  str;
+
+	bool operator < (const DataStruct& ds)
+	{
+		return key1 < ds.key1;
+	}
 };
 
 vector<DataStruct> addStruct(int amountOfElements)
@@ -50,9 +55,12 @@ int main()
 	vectorMain = addStruct(10);
 	first = vectorMain.begin();
 	last = vectorMain.end();
+	cout << "Unsorted:\n";
 	show(vectorMain);
 	
-	//stable_sort(first, last);
+	sort(first, last);
+	cout << "\nSorted:\n";
+	show(vectorMain);
 	//for_each(first, last, cout << i)
 
 	_getch();
