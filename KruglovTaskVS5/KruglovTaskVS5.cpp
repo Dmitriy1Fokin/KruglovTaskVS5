@@ -13,7 +13,22 @@ typedef struct DataStruct
 
 	bool operator < (const DataStruct& ds)
 	{
-		return key1 < ds.key1;
+		if (key1 == ds.key1)
+		{
+			if (key2 == ds.key2)
+			{
+				return str.length() < ds.str.length();
+			}
+			else
+			{
+				return key2 < ds.key2;
+			}
+		}
+		else
+		{
+			return key1 < ds.key1;
+		}
+		
 	}
 };
 
@@ -52,7 +67,7 @@ int main()
 	vector<DataStruct>::iterator first, last;
 
 
-	vectorMain = addStruct(10);
+	vectorMain = addStruct(20);
 	first = vectorMain.begin();
 	last = vectorMain.end();
 	cout << "Unsorted:\n";
